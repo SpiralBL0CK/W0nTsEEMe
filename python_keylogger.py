@@ -9,10 +9,10 @@ fisier = '1.txt'
 def get_cpu_procentage():
 	try:
 		fd = open('info.txt',"w+")
-#		cpu_procent = psutil.cpu_percent()
-#		fd.write(str(cpu_procent))
-#		fd.write("\n");
-#		fd.write(str(psutil.virtual_memory()))
+		cpu_procent = psutil.cpu_percent()
+		fd.write(str(cpu_procent))
+		fd.write("\n");
+		fd.write(str(psutil.virtual_memory()))
 	
 	except IOError:
 		os.system("touch info.txt")
